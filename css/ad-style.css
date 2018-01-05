@@ -1,0 +1,15 @@
+.install-button{
+    border: 5px solid red !important;
+    animation-name: blinker;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.install-button:hover{
+    border: none;
+}
+
+@keyframes blinker{
+    from {border-color: white}
+    to {border-color: red}
+}
