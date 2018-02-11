@@ -6,15 +6,21 @@ body {
 .w3-bar-block .w3-bar-item {
     padding:16px;font-weight:bold}
 
-ul {
-    list-style: none;
-}
-
 article {
     border-bottom: 1px solid #eee;
+    padding-bottom: 16px;
 }
 
-/* Osobné */
-#logo {
-    
+.active{
+    font-size: 2em;
+    text-align: center !important;
+    background-color: #87ceeb;
+    color: white;
 }
+.not-active{
+    background-color: rgb(209, 209, 209);
+    color: rgb(155, 155, 155);
+}
+
+
+/* Osobné */

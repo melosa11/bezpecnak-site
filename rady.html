@@ -5,57 +5,112 @@
 <meta charset="utf-8">
 <link rel="icon" href="favicon.ico">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-blue.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
 
 <body>
 
-    <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
-        <a class="w3-bar-item w3-button w3-border-bottom w3-large" href="#">
-            <img id="logo" src="images/logo-128.png" >
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card nav-padding" style="z-index:3;width:160px;" id="mySidebar">
+        <a class="w3-bar-item w3-border-bottom w3-large">
+            <img id="logo" src="images/logo-128.png">
         </a>
-        <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close
+        <a class="w3-bar-item w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Zatvor ma
             <i class="fa fa-remove"></i>
         </a>
-        <a class="w3-bar-item w3-button" href="#">Úvod</a>
-        <a class="w3-bar-item w3-button" href="#">Základy</a>
-        <a class="w3-bar-item w3-button" href="#">Doplnky</a>
-        <a class="w3-bar-item w3-button w3-theme-l3" href="#">Rady</a>
+        <a class="w3-bar-item not-active">Úvod</a>
+        <a class="w3-bar-item not-active">Základy</a>
+        <a class="w3-bar-item not-active">Doplnky</a>
+        <a class="w3-bar-item active">Rady</a>
     </nav>
 
     <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
 
-    <div class="w3-main" style="margin-left:250px;">
+    <div class="w3-main" style="margin-left:160px;">
 
         <div id="myTop" class="w3-container w3-top w3-theme w3-large">
             <p>
                 <i class="fa fa-bars w3-button w3-theme-d4 w3-hide-large w3-xlarge" onclick="w3_open()"></i>
-                <span id="myIntro" class="w3-hide">Úvod</span>
+                <span id="myIntro" class="w3-hide">Rady</span>
             </p>
         </div>
 
         <header class="w3-container w3-theme" style="padding:64px 32px">
-            <h1 class="w3-xxxlarge">Úvod</h1>
+            <h1 class="w3-xxxlarge">Rady</h1>
         </header>
 
         <div class="w3-container w3-row" style="padding:32px">
             <div id="main" class="w3-col l10">
                 <!--Text sem-->
-                <h2>Zatial nič</h2>
+                <div class="w3-container w3-pale-yellow w3-leftbar w3-border-yellow">
+                    <h3>Ešte predtým ako začnete čítať</h3>
+                    <p>Táto sekcia obsahuje užitočné informácie, ktoré nemusia byť potrebné okamžite. Na túto stránku sa môžete
+                        vrátiť kliknutím na ikonku modrého štítu v
+                        <strong>v pravom hornom rohu</strong>
+                    </p>
+                    <img style="display:inline-block" src="images/logo-128.png">
+                </div>
+                <article>
+                    <h2>Dočastné vypnutie Adblocku</h2>
+                    <p>Ak sá vás stránka snaží upozorniť na to, že máte zapnutý Adblock a žiada o vypnutie, tak ho poslúchnite.
+                        Aj stránky musia zarábať.
+                    </p>
+                    <ol>
+                        <h3>Postup:</h3>
+                        <li>Kliknite na iknou doplnku Adblock <strong>v pravom hornom rohu</strong></li>
+                        <img src="images/c-adblock.jpg" alt="">
+                        <li>Kliknite na tlačítko
+                            <i>"Povolené na tejto stránke"</i>
+                        </li>
+                        <img src="images/c-adblock-open.png" alt="">
+                    </ol>
+                </article>
+                <article>
+                    <h2>Uloženie stránky</h2>
+                    <p>Je ťažké si zapamätať všetky vaše obľúbené stránky. Preto je dôležité, aby ste vedeli ako uložiť stránky
+                        a kde ich nájsť.</p>
+                    <ol>
+                        <h3>Postup:</h3>
+                        <li>Kliknite na hviezdičku v pravej časti vyhľadávacieho poľa <strong>v pravom hornom rohu</strong> </li>
+                        <img src="images/c-zalozky-otvor.png" alt="">
+                        <li>Vyberte priečinok
+                            <i>"Panel záložiek"</i>
+                        </li>
+                        <li>Doporučujeme vybrať panel záložiek</li>
+                        <img style="width: 100%" src="images/c-zalozky-uloz.png" alt="">
+                    </ol>
+                </article>
+                <article>
+                    <h2>Všeobecná múdrosť</h2>
+                    <ul>
+                        <li>Nikdy nehovor nikomu svoje heslo.</li>
+                        <li>Nikdy nezverejňuj svoje osobné údaje.</li>
+                        <li>Nikdy neposielaj fotky cudzím ľuďom.</li>
+                        <li>Nikdy nesťahuj súbory z internetu z neoverených zdrojov.</li>
+                        <li>Nikdy neukladaj svoje heslá.</li>
+                        <li>Never lákavým ponukám.</li>
+                        <li>Never ľudom, ktorých nepoznáš.</li>
+                        <li>Dávaj si pozor, kto je na druhej strane.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h2>Vypnutie prehliadača</h2>
+                    <p>Ak ste skončili s prácou na internete, tak poslednou vašou činnosťou bude ukončenie programu</p>
+                    <ol>
+                        <h3>Postup:</h3>
+                        <li>Kliknite na červené X <strong>v pravom hornom rohu</strong></li>
+                        <img src="images/c-vypnut.png" alt="">
+                    </ol>
+                </article>
+                <!--Text sem-->
             </div>
         </div>
         <div id="right" class="w3 col l2"></div>
         <footer class="w3-container w3-theme" style="padding:32px">
-            <p>Footer information goes here</p>
+            <p>Bezpečnák</p>
         </footer>
     </div>
-
-
-
-    </div>
-
     <script src="responsive.js"></script>
 
 </body>

@@ -5,58 +5,80 @@
 <meta charset="utf-8">
 <link rel="icon" href="favicon.ico">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-blue.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
+<!-- Pre chrome doplnok -->
+
 
 <body>
 
-    <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
-        <a class="w3-bar-item w3-button w3-border-bottom w3-large" href="#">
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card nav-padding" style="z-index:3;width:160px;" id="mySidebar">
+        <a class="w3-bar-item w3-border-bottom w3-large">
             <img id="logo" src="images/logo-128.png">
         </a>
-        <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close
-            <i class="fa fa-remove"></i>
+        <a class="w3-bar-item w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Zatvor ma
         </a>
-        <a class="w3-bar-item w3-button" href="#">Úvod</a>
-        <a class="w3-bar-item w3-button" href="#">Základy</a>
-        <a class="w3-bar-item w3-button w3-theme-l3" href="#">Doplnky</a>
-        <a class="w3-bar-item w3-button" href="#">Rady</a>
+        <a class="w3-bar-item not-active">Úvod</a>
+        <a class="w3-bar-item not-active">Základy</a>
+        <a class="w3-bar-item active">Doplnky</a>
+        <a class="w3-bar-item">Rady</a>
     </nav>
 
     <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
 
-    <div class="w3-main" style="margin-left:250px;">
+    <div class="w3-main" style="margin-left:160px;">
 
         <div id="myTop" class="w3-container w3-top w3-theme w3-large">
             <p>
                 <i class="fa fa-bars w3-button w3-theme-d4 w3-hide-large w3-xlarge" onclick="w3_open()"></i>
-                <span id="myIntro" class="w3-hide">Úvod</span>
+                <span id="myIntro" class="w3-hide">Doplnky</span>
             </p>
         </div>
 
         <header class="w3-container w3-theme" style="padding:64px 32px">
-            <h1 class="w3-xxxlarge">Úvod</h1>
+            <h1 class="w3-xxxlarge">Doplnky</h1>
         </header>
 
         <div class="w3-container w3-row" style="padding:32px">
             <div id="main" class="w3-col l10">
                 <!--Text sem-->
-                <a href="#" class="download w3-btn">Stiahni Doplnok</a>
-                <div class="extension-insert"></div>
+                <p>Doplnok je program, ktorý rozširuje funkcie vášho prehliadača. Existuje ich mnoho, my však potrebujeme jeden.</p>
+                <article>
+                    <h2>Adblock Plus</h2>
+                    <blockquote>
+                        <p class="w3-large">
+                            <i>"Adblock Plus je rozšírenie zadarmo, ktoré okrem iného blokuje otravné reklamy, zakazuje sledovanie
+                                a blokuje domény, ktoré môžu šíriť malwér."</i>
+                        </p>
+                        <p>Citované zo stránky Adblock Plus</p>
+                    </blockquote>
+                    <div class="w3-container w3-pale-yellow w3-leftbar w3-border-yellow">
+                        <h3>Inštalácia</h3>
+                        <ol>
+                            <li>Kliknite na tlačídlo "Stiahni doplnok"</li>
+                            <li>Po kliknutí na tlačítko postupujte následovne podľa obrázka nižšie.</li>
+                        </ol>
+                        <div class="w3-bar w3-margin-top">
+                            <a class="download w3-btn w3-theme-d5 w3-large w3-center" style="width: 25%" href="https://adblockplus.org/sk">Stiahni Doplnok</a>
+                        </div>
+                        <div class="w3-center">
+                            <img class="w3-margin-top" id="extension-insert" src="#" alt="instalovanie doplnku" style="border: 1px solid black">
+                            <p>
+                                <i>Ako naistalovať doplnok</i>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <!--Text sem-->
             </div>
         </div>
         <div id="right" class="w3 col l2"></div>
         <footer class="w3-container w3-theme" style="padding:32px">
-            <p>Footer information goes here</p>
+            <p>Bezpečnák</p>
         </footer>
     </div>
-
-
-
-    </div>
-
     <script src="responsive.js"></script>
 
 </body>

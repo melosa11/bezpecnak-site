@@ -5,29 +5,29 @@
 <meta charset="utf-8">
 <link rel="icon" href="favicon.ico">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-blue.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
 
 <body>
 
-    <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
-        <a class="w3-bar-item w3-button w3-border-bottom w3-large" href="#">
-            <img id="logo" src="images/logo-128.png" >
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card nav-padding" style="z-index:3;width:160px;" id="mySidebar">
+        <a class="w3-bar-item w3-border-bottom w3-large">
+            <img id="logo" src="images/logo-128.png">
         </a>
-        <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close
+        <a class="w3-bar-item w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Zatvor ma
             <i class="fa fa-remove"></i>
         </a>
-        <a class="w3-bar-item w3-button w3-theme-l3" href="#">Úvod</a>
-        <a class="w3-bar-item w3-button" href="#">Základy</a>
-        <a class="w3-bar-item w3-button" href="#">Doplnky</a>
-        <a class="w3-bar-item w3-button" href="#">Rady</a>
+        <a class="w3-bar-item active">Úvod</a>
+        <a class="w3-bar-item">Základy</a>
+        <a class="w3-bar-item">Doplnky</a>
+        <a class="w3-bar-item">Rady</a>
     </nav>
 
     <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
 
-    <div class="w3-main" style="margin-left:250px;">
+    <div class="w3-main" style="margin-left:160px;">
 
         <div id="myTop" class="w3-container w3-top w3-theme w3-large">
             <p>
@@ -45,26 +45,32 @@
                 <!--Text sem-->
                 <article>
                     <h2>Predhovor</h2>
-                    <p>Rád by som ťa privítal na tejto webovej stránke, ktorá je súčasťou nášho doplnku Bezpečnák . Tento obsah
-                        je určený pre tých, ktorý nemajú žiadnu alebo veľmi malú skúsenosť s internetom a jeho používaním.</p>
-                    <p>Táto stránka slúži na to aby ťa oboznámila so základmi:</p>
-                    <ul class="w3-leftbar w3-border-gray">
+                    <p>Rád by som vás privítal na tejto webovej stránke, ktorá je súčasťou doplnku Bezpečnák. Tento obsah je
+                        určený pre tých, ktorí nemajú žiadnu alebo veľmi malú skúsenosť s internetom a jeho používaním.</p>
+                    <p>Táto stránka slúži na to aby vás oboznámila so základmi:</p>
+                    <ul>
                         <li>prehľadávania internetových stránok na internete,</li>
                         <li>fungovania internetového prehliadača,</li>
                         <li>bezpečnosti na internete</li>
                     </ul>
+                </article>
+                <article>
+                    <h2>Ako používať tento návod</h2>
+                    <p>
+                        <strong>Postupujte presne podľa pokynov!</strong>
+                    </p>
                     <div class="w3-container w3-pale-yellow w3-leftbar w3-border-yellow">
-                        <p>Ešte predtým ako začneme, tak ťa prosím aby si postupoval presne podľa pokynov, ktoré ti budú dané.</p>
-                    </div>
-                    <div class="w3-bar w3-margin-top">
-                        <a class="w3-btn w3-theme-d5 w3-large w3-right" style="width: 25%" href="#">Pokračovať</a>
+                        <p>Kliknite na tlačitdlo "Začať"</p>
                     </div>
                 </article>
+                <div class="w3-bar w3-margin-top">
+                    <a class="w3-btn w3-theme-d5 w3-large w3-right" style="width: 25%" href="zaklady.html">Začať</a>
+                </div>
             </div>
         </div>
         <div id="right" class="w3 col l2"></div>
         <footer class="w3-container w3-theme" style="padding:32px">
-            <p>Footer information goes here</p>
+            <p>Bepečnák</p>
         </footer>
     </div>
 
